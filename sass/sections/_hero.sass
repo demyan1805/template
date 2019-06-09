@@ -1,0 +1,63 @@
+.hero
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    color: #ffffff
+    margin: auto 0
+    &__text
+    &__title
+        max-width: 475px
+        font-size: 55px
+        text-align: left
+        line-height: 65px
+        margin-bottom: 0
+    &__subtitle
+        margin-top: 0
+        max-width: 580px
+        font-size: 18px
+        text-align: left
+        line-height: 35px
+    &__video-preview
+       
+        height: 100%
+button
+    width: 150px
+    height: 60px
+    color: #fff
+    border: none
+    font-size: 15px
+    background-color: #061e37
+    text-transform: uppercase
+    border-radius: 5px
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15) 
+    transition: all 0.2s ease-in-out
+    +bold
+    &:hover
+        flex-grow: 0
+        transform: scale(1.1)
+
+.btn-buy
+    margin-right: 30px
+
+.btn-try
+    background-color: #fff
+    color: #061e37
+.video-container
+    position: relative
+    width: 600px
+    height: 320px
+  
+.btn-play
+    width: 62px
+    height: 62px
+    position: absolute
+    left: 50%
+    top: 50%
+    z-index: 2
+    // transform-origin: 31px 31px
+    transform: translate(-31px, -31px)
+    &:hover
+        transform: translate(-31px, -31px) scale(1.1)
+
+
+

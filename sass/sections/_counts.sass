@@ -1,0 +1,42 @@
+.counts
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 150px
+    &-item
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-grow: 1
+        height: 100%
+        &:nth-child(1)
+            background-color: #80d8ff
+        &:nth-child(2)
+            background-color: #82b1ff
+        &:nth-child(3)
+            background-color: #b388ff
+        &:nth-child(4)
+            background-color: #ea80fc
+        &-wrap
+            display: flex
+            flex-direction: row
+            align-items: center
+    &-icon
+        display: block
+        margin: auto
+        &-wrap
+            display: flex
+            align-items: center
+            width: 60px
+            height: 60px
+            margin-right: 20px
+            // padding: 20px
+            border-radius: 50%
+            background-color: #fff
+    &-title
+        max-width: 120px
+        color: #fff
+        +bold
+        font-size: 20px
+        line-height: 25px
+        

@@ -1,0 +1,59 @@
+.easy
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    &__title
+        font-size: 45px
+        +bold
+        margin: 0
+        &-wrap
+            max-width: 570px
+            text-align: center
+    &__subtitle
+        color: #b0bec5
+        font-size: 25px
+        margin: 10px
+        +bold
+    &__description
+        color: #b0bec5
+        font-size: 15px
+        line-height: 25px
+    &__presentation
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: flex-end
+        padding: 50px
+        &-item
+            max-width: 350px
+            margin: 0 25px
+            border-radius: 3px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            transition: all 0.15s ease-in-out
+
+            &:hover
+                flex-grow: 0
+                transform: scale(1.1)
+                box-shadow: 0 3px 5px 0 #1de9b6
+.item
+    &-icon
+        margin-top: 10px
+    &-title
+        font-size: 20px
+        margin-bottom: 20px
+    &-description
+        margin-top: 0
+        text-align: center
+        color: #b0bec5
+        font-size: 15px
+        line-height: 25px
+.btn-start
+    width: 150px
+    height: 55px
+    background-color: #1de9b6
+    text-transform: uppercase
+    +bold

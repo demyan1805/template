@@ -1,0 +1,112 @@
+.services
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    &__title-wrap
+        max-width: 560px
+        text-align: center
+    &__title
+        // margin-bottom: 25px
+    &__description
+        color: #b0bec5
+        font-size: 15px
+        line-height: 25px
+    &__accordion
+        width: 800px
+        &-item
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            justify-items: stretch
+            align-items: center
+            width: 100%
+            min-height: 50px
+            margin: 20px 0
+            border-radius: 5px
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1)
+            transition: all 1s ease-in-out
+            &:hover
+                background: linear-gradient(#80d8ff, #82b1ff)
+            input[type="checkbox"]
+                display: none 
+                &#statistics:checked 
+                    ~ .services__accordion-item-content-statistics
+                        display: flex
+                        justify-content: space-around
+                        padding: 25px
+                        img
+                            margin-right: 25px
+                    ~ label[for="statistics"]
+                        .arrow-drop-down
+                            transform: rotate(180deg)
+                &#inbox:checked 
+                    ~ .services__accordion-item-content-inbox
+                        display: flex
+                        justify-content: space-around
+                        padding: 25px
+                        img
+                            margin-right: 25px
+                    ~ label[for="inbox"]
+                        .arrow-drop-down
+                            transform: rotate(180deg)
+                &#team:checked 
+                    ~ .services__accordion-item-content-team
+                        display: flex
+                        justify-content: space-around
+                        padding: 25px
+                        img
+                            margin-right: 25px
+                    ~ label[for="team"]
+                        .arrow-drop-down
+                            transform: rotate(180deg)
+                &#settings:checked 
+                    ~ .services__accordion-item-content-settings
+                        display: flex
+                        justify-content: space-around
+                        padding: 25px
+                        img
+                            margin-right: 25px
+                    ~ label[for="settings"]
+                        .arrow-drop-down
+                            transform: rotate(180deg)
+                &#feed:checked 
+                    ~ .services__accordion-item-content-feed
+                        display: flex
+                        justify-content: space-around
+                        padding: 25px
+                        img
+                            margin-right: 25px
+                    ~ label[for="feed"]
+                        .arrow-drop-down
+                            transform: rotate(180deg)
+                        
+            label
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 100%
+                margin: 15px auto
+                span
+                    flex-grow: 1
+                    align-self: left
+                    // margin-left: 25px
+                    text-transform: uppercase
+                    font-size: 15px
+                    +bold
+                img
+                    margin: auto 25px
+
+            &-content
+                &-statistics
+                    display: none
+                &-inbox
+                    display: none
+                &-team
+                    display: none
+                &-settings
+                    display: none
+                &-feed
+                    display: none
+.arrow-drop-down
+    transition: all 0.3s ease-in-out
