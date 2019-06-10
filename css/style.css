@@ -90,6 +90,27 @@ body {
   opacity: 1;
 }
 
+.title-wrap {
+  margin: 0 auto;
+  max-width: 560px;
+  padding: 0;
+  text-align: center;
+}
+
+.title-wrap .title {
+  font-size: 45px;
+  margin: 0;
+}
+
+.title-wrap .description {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #78909c;
+  font-family: 'Raleway Regular', sans-serif;
+}
+
 .navbar__wrap {
   min-height: 35px;
   display: -webkit-box;
@@ -836,5 +857,103 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.team {
+  text-align: center;
+}
+
+.team__our-team {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.team__our-team .member-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+}
+
+.team__our-team .member-wrap .avatar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0.2;
+  margin: 0 25px;
+}
+
+.team__our-team .member-wrap .avatar.active {
+  width: 160px;
+  height: 160px;
+  opacity: 1;
+}
+
+.team__our-team .member-wrap .avatar.active img {
+  margin: 0;
+  border-radius: 50%;
+}
+
+.team__our-team .member-wrap .avatar.active .over {
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+  min-width: 160px;
+  height: 160px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.8), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.8), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.team__our-team .description-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team__our-team .description-wrap .name {
+  margin: 0;
+  padding-top: 20px;
+}
+
+.team__our-team .description-wrap .text {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #78909c;
+  font-family: 'Raleway Regular', sans-serif;
+}
+
+.team .social {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.contact-form {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
