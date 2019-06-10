@@ -561,8 +561,8 @@ button:hover {
 }
 
 .services__accordion-item input[type="checkbox"]#statistics:checked ~ label[for="statistics"] .arrow-drop-down {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .services__accordion-item input[type="checkbox"]#inbox:checked ~ .services__accordion-item-content-inbox {
@@ -579,8 +579,8 @@ button:hover {
 }
 
 .services__accordion-item input[type="checkbox"]#inbox:checked ~ label[for="inbox"] .arrow-drop-down {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .services__accordion-item input[type="checkbox"]#team:checked ~ .services__accordion-item-content-team {
@@ -597,8 +597,8 @@ button:hover {
 }
 
 .services__accordion-item input[type="checkbox"]#team:checked ~ label[for="team"] .arrow-drop-down {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .services__accordion-item input[type="checkbox"]#settings:checked ~ .services__accordion-item-content-settings {
@@ -615,8 +615,8 @@ button:hover {
 }
 
 .services__accordion-item input[type="checkbox"]#settings:checked ~ label[for="settings"] .arrow-drop-down {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .services__accordion-item input[type="checkbox"]#feed:checked ~ .services__accordion-item-content-feed {
@@ -633,8 +633,8 @@ button:hover {
 }
 
 .services__accordion-item input[type="checkbox"]#feed:checked ~ label[for="feed"] .arrow-drop-down {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .services__accordion-item label {
@@ -690,5 +690,151 @@ button:hover {
 .arrow-drop-down {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 565px;
+  background: url("../../img/testimonials-BG.png");
+  padding: 0 50px;
+}
+
+.testimonials__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.testimonials__description-title {
+  font-size: 45px;
+  font-family: 'Raleway Semibold', sans-serif;
+  max-width: 450px;
+}
+
+.testimonials__description-title-wrapper {
+  margin: 0;
+  width: 520px;
+  color: #ffffff;
+}
+
+.testimonials__description-text {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.testimonials__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
+}
+
+.btn {
+  width: 150px;
+  height: 60px;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  background-color: #061e37;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Raleway Semibold', sans-serif;
+}
+
+.btn:hover {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.slider__btn {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 0.5;
+}
+
+.slider__btn:hover {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.slider__item {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider__item .avatar {
+  margin-right: 50px;
+  -webkit-filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.15));
+}
+
+.slider__item .message {
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin: 25px 0;
+}
+
+.slider__item .message .name {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'Raleway Semibold', sans-serif;
+  margin: 0;
+}
+
+.slider__item .message .text {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 15px;
+  line-height: 25px;
+  font-style: italic;
+  color: #78909c;
+  font-family: 'Raleway Regular', sans-serif;
+}
+
+.slider__item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

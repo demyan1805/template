@@ -1,0 +1,83 @@
+.testimonials
+    display: flex
+    justify-content: space-between
+    height: 565px
+    background: url('../../img/testimonials-BG.png')
+    padding: 0 50px
+    &__description
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: flex-start
+        &-title
+            font-size: 45px
+            +bold
+            max-width: 450px
+            &-wrapper
+                margin: 0
+                width: 520px
+                color: #ffffff
+        &-text
+            font-size: 15px
+            line-height: 25px
+    &__slider
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        margin-left: 50px
+.btn
+    width: 150px
+    height: 60px
+    color: #fff
+    border: none
+    font-size: 15px
+    background-color: #061e37
+    text-transform: uppercase
+    border-radius: 5px
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15) 
+    transition: all 0.2s ease-in-out
+    +bold
+    &:hover
+        flex-grow: 0
+        transform: scale(1.1)
+.slider
+    &__btn
+        background: transparent
+        box-shadow: none
+        opacity: 0.5
+        &:hover
+            opacity: 1
+            transform: none
+    &__item
+        display: none
+        justify-content: space-between
+        align-items: center
+
+        .avatar
+            margin-right: 50px
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.15))
+
+
+        .message
+            background-color: #fff
+            border-radius: 5px
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15)
+            padding: 20px
+            margin: 25px 0
+            .name
+                font-size: 18px
+                line-height: 25px
+                +bold
+                margin: 0
+            .text
+                margin: 0
+                padding-top: 20px
+                font-size: 15px
+                line-height: 25px
+                font-style: italic
+                color: #78909c
+                +regular
+        &.active
+            display: flex
+        
